@@ -11,6 +11,8 @@ services:
        - MYSQL_DATABASE=oressource
        - MYSQL_USER=oressource
        - MYSQL_PASSWORD=password
+      volumes:
+        - ./:/var/www/html
       links:
        - database
 
