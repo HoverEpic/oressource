@@ -74,7 +74,7 @@ if (is_valid_session() && is_allowed_vente_id($numero)) {
         </div>
         <div class="panel-footer">
           <input type="text" form="formulaire" class="form-control"
-                 name="commentaire" id="commentaire" placeholder="Commentaire">
+                 name="commentaire" id="commentaire" placeholder="Commentaire" autocomplete="off">
           <br>
           <button type="button" class="btn btn-warning" data-toggle="collapse"
                   data-target="#collapserendu" aria-expanded="false"
@@ -128,7 +128,7 @@ if (is_valid_session() && is_allowed_vente_id($numero)) {
 
           <label id="labelprix" for="prix">Prix unitaire:</label>
             <input type="text" class="form-control"
-                   placeholder="€" id="prix" onfocus="fokus(this)">
+                   placeholder="€" id="prix" onfocus="fokus(this)"autocomplete="off">
 
           <?php if (pesees_ventes()) { ?>
           <label id="labelmasse" for="masse">Masse unitaire:</label>
