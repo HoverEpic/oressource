@@ -102,6 +102,10 @@ function reset_numpad() {
   render_numpad(numpad);
 }
 
+function reset_comment() {
+  document.getElementById('commentaire').value = '';
+}
+
 /// Cette fonction remet l'interface du choix du moyen de paiement à son état initial
 /// c'est à dire sur «espèce».
 function reset_paiement() {
@@ -144,6 +148,7 @@ function reset(data, response) {
   reset_numpad();
   reset_rendu();
   reset_paiement();
+  reset_comment();
 
   // On remet à zéro le panier
   {
